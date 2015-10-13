@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" href = "style.css">
+		<title>Title of the document</title>
+	</head>
+
+	<body>
+		<div id = "mainDiv">
+			<form id="totalForm">
+				<div id = "mainButtons">
+					<input type = "button" class = "button" value = "Submit" onClick = "checkAllValid()"/>
+					<input type = "button" class = "button" value = "Add Question" onClick = "addQuestion()"/>
+					<br><br>
+				<div id = "question1">
+					<label>Question 1</label>
+					<input type="text" id="question1Input"/>
+					<input id = "addAnswerChoiceQuestion1" class = "button" type="button" value="Add Answer Choice" onClick="addAnswerChoice(1)"/>
+					<input type="button" class = "button" value="Remove Answer Choice" onClick="removeAnswerChoice(1)"/><br><br>
+				</div>
+				<br id = "question1Break">
+			</form>
+		</div>
+		<div id = "errorMessage">
+		</div>
+	</body>
+
+</html> 
